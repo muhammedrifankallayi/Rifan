@@ -1,0 +1,119 @@
+section{
+    padding: 10px 150px;
+}
+
+.img-wraper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 10px;
+  border: 1px solid #cccc;
+  gap: 10px; /* Adds space between grid items if needed */
+}
+
+.img-grid {
+  position: relative;
+  padding-top: 100%; /* This creates a 1:1 aspect ratio for each grid cell */
+  overflow: hidden;
+}
+
+.img-grid img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.section-two h1{
+ font-size: 70px;
+ font-weight: 700;
+}
+.section-two h2{
+  font-family: fantasy;
+}
+
+.breaker{
+    color: blueviolet;
+}
+
+
+.week-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-height: 500px;
+    overflow: auto;
+    scrollbar-color: green !important;
+  }
+  .week {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    background-color: lightgray;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    font-size: 7px;
+  }
+  .week.completed {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .week.upcoming {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .week.current {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .status {
+   display: flex;
+   justify-content: center;
+   column-gap: 4px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+  }
+
+  .status span{
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+
+  /* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 5px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Optional: Scrollbar track background */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightgray; /* Blue color for scrollbar */
+    border-radius: 10px; /* Rounded scrollbar edges */
+    border: 2px solid transparent; /* Optional: to add padding around scrollbar thumb */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: lightgray #f1f1f1; /* Blue scrollbar, light gray track */
+}
+
+@media(max-width:600px){
+  section{
+    padding: 10px !important;
+  }
+}
