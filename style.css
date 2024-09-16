@@ -91,6 +91,59 @@ section{
   }
 
 
+
+
+  .connect-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .connect-main div {
+    width: 120px;
+    display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+  }
+  
+  .connect-main img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  figcaption {
+    margin-top: 8px; /* Space between image and caption */
+    font-size: 14px; /* Adjust font size */
+    color: #333; /* Adjust text color */
+  }
+  
+
+
+
+.connect-main img{
+  width: 100%;
+
+}
+
+.label{
+  width: 100%;
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
   /* For WebKit browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
     width: 5px; /* Scrollbar width */
